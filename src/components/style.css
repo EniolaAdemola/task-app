@@ -51,3 +51,106 @@
     width: 90%;
     flex-wrap: wrap;
 }
+
+.todos__single {
+    display: flex;
+    /* justify-content: space-between; */
+    /* width: 80%; */
+    border-radius: 15px;
+    padding: 20px;
+    margin-top: 15px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../image/task-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    transition: 0.2s;
+    align-items: center;
+    color: #fff;
+    /* overflow: scroll; */
+}
+
+.todos__single:hover {
+    box-shadow: 0 0 5px black;
+    transform: scale(1.03)
+}
+
+.todos__single-text {
+    flex: 1;
+    padding: 5px;
+    border: none;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+.todos__single--text:focus {
+    outline: none;
+}
+
+.icon {
+    margin-left: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.done {
+    text-decoration: line-through;
+}
+
+.container {
+    display: flex;
+    width: 90%;
+    margin-top: 10px;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.todos__heading {
+    font-size: 30px;
+}
+
+.todos {
+    display: flex;
+    background-color: rgb(58, 179, 206);
+    /* margin : 5px; */
+    flex-direction: column;
+    /* align-items: center; */
+    padding: 10px;
+    width: 47.5%;
+}
+
+.active__task {
+    border: 5px solid yellow;
+    border-radius: 10px;
+}
+
+.completed__task {
+    border: 5px solid green;
+    border-radius: 10px;
+}
+
+
+
+/* @media (max-width: 1200px) {
+    .todos__single {
+        width: 40%;
+    }
+} */
+
+@media (max-width: 700px) {
+    .input {
+        width: 95%;
+    }
+
+    .todos {
+        width: 95%;
+        margin-bottom: 10px;
+    }
+
+    /* .todos__single {
+        width: 100%;
+    } */
+
+    .container {
+        width: 70%;
+        flex-direction: column;
+    }
+}
