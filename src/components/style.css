@@ -154,3 +154,15 @@
         flex-direction: column;
     }
 }
+
+.dragactive {
+    background-color: rgb(201, 174, 39);
+}
+
+.dragcomplete {
+    background-color: rgb(49, 196, 123);
+}
+
+.drag {
+    box-shadow: 0 0 20px black;
+}
